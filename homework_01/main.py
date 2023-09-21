@@ -20,11 +20,14 @@ EVEN = "even"
 PRIME = "prime"
 
 
-def is_prime(x):
-    for i in range(2, (x//2)+1):
-        if x % i == 0:
+def is_prime(a):
+    if a < 2:
+        return False
+    for i in range(2, int(a ** 0.5 + 1)):
+        if a % i == 0:
             return False
-    return True
+    else:
+        return True
 
 
 def filter_numbers(numbers_list, filter_type):
