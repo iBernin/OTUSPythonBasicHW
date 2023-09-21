@@ -48,4 +48,3 @@ def filter_numbers(numbers_list, filter_type):
         return [number for number in numbers_list if is_prime(number) is True]
 
 
-print(filter_numbers([0,1,2,3,4,5,6,7,8,9,10,11], PRIME))
