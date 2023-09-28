@@ -1,5 +1,5 @@
-#import sys
-#sys.path.append('C:\\Users\\gremlin\\YandexDisk\\python\\OTUSPythonBasic\\homeworks\\')
+# import sys
+# sys.path.append('C:\\Users\\gremlin\\YandexDisk\\python\\OTUSPythonBasic\\homeworks\\')
 from homework_02 import exceptions
 
 
@@ -28,15 +28,3 @@ class Vehicle():
         else:
             self.fuel -= (distance * self.fuel_consumption)
             print(f'осталось {self.fuel} топлива')
-
-
-# def main():
-#     trip = Vehicle(100, 50, 1)
-#     trip.start()
-#     trip.move(1)
-    
-
-
-
-# if __name__ == '__main__':
-#     main()
