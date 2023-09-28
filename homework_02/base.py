@@ -1,14 +1,14 @@
 # import sys
 # sys.path.append('C:\\Users\\gremlin\\YandexDisk\\python\\OTUSPythonBasic\\homeworks\\')
 from homework_02 import exceptions
+from abc import ABC
 
-
-class Vehicle():
-    started = False
+class Vehicle(ABC):
 
     def __init__(self, weight=100, fuel=50, fuel_consumption=1):
         self.weight = weight
         self.fuel = fuel
+        self.started = False
         self.fuel_consumption = fuel_consumption
 
     def start(self):
