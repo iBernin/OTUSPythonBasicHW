@@ -1,6 +1,8 @@
 # import sys
 # sys.path.append('C:\\Users\\gremlin\\YandexDisk\\python\\OTUSPythonBasic\\homeworks\\')
-from homework_02 import exceptions
+#from homework_02 import exceptions
+from homework_02.exceptions import LowFuelError, NotEnoughFuel
+
 from abc import ABC
 
 class Vehicle(ABC):
@@ -18,13 +20,13 @@ class Vehicle(ABC):
         elif self.started is True:
             print('Vehicle already started')
         else:
-            raise exceptions.LowFuelError('Low Fuel')
+            raise LowFuelError('Low Fuel')
 
     def move(self, distance):
         if self.fuel <= 0 and self.fuel_consumption <= 0 and self.fuel <= self.fuel_consumption:
-            raise exceptions.NotEnoughFuel('Not Enough Fuel')
+            raise NotEnoughFuel('Not Enough Fuel')
         elif self.fuel < (distance * self.fuel_consumption):
-            raise exceptions.NotEnoughFuel('Not Enough Fuel')
+            raise NotEnoughFuel('Not Enough Fuel')
         else:
             self.fuel -= (distance * self.fuel_consumption)
             print(f'осталось {self.fuel} топлива')
