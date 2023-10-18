@@ -51,3 +51,5 @@ traitlets==5.9.0 ; python_version >= "3.11" and python_version < "4.0"
 urllib3==1.26.16 ; python_version >= "3.11" and python_version < "4"
 wcwidth==0.2.6 ; python_version >= "3.11" and python_version < "4.0"
 websocket-client==1.6.3 ; python_version >= "3.11" and python_version < "4.0"
+uvicorn==0.23.2
+fastapi==0.103.2
